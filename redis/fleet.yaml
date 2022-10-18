@@ -1,0 +1,13 @@
+
+defaultNamespace: redis
+
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: redis
+  version: 17.3.6
+  values:
+    auth:
+      password: "passw0rd"
+    # https://github.com/bitnami/charts/tree/main/bitnami/redis#host-kernel-settings
+    sysctl:
+      enabled: true
