@@ -1,0 +1,14 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: cluster-config
+  namespace: fleet-local
+spec:
+  repo: https://github.com/raif-ahmed/fleet-apps.git
+  branch: main
+  paths:
+    - /cluster-config
+
+  targets:
+  - name: local
+    clusterSelector: {}
