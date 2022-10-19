@@ -10,7 +10,7 @@ spec:
     - /longhorn
 
   targets:
-  - name: rke
+  - name: all-downstream
     clusterSelector:
       matchExpressions:
       - key: management.cattle.io/cluster-display-name

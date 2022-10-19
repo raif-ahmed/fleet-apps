@@ -1,0 +1,13 @@
+
+defaultNamespace: azure-api-management-gateway
+
+# https://learn.microsoft.com/en-us/azure/api-management/how-to-deploy-self-hosted-gateway-kubernetes-helm
+helm:
+  repo: https://azure.github.io/api-management-self-hosted-gateway/helm-charts
+  chart: azure-api-management-gateway
+  version: 1.0.0
+  values:
+    gateway:
+      auth: 
+        key: "passw0rd"
+

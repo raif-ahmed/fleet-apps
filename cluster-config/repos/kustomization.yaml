@@ -4,4 +4,5 @@ kind: Kustomization
 resources:
 - gitrepo-cluster-longhorn.yaml
 - gitrepo-cluster-redis.yaml
+- gitrepo-cluster-azure-apim-gateway.yaml
 
