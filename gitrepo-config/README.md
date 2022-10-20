@@ -1,7 +1,10 @@
 
 # Introduction
 
-This file will declaratively specify another/one fleet GitRepo. this GitRepo will be deployed to local rancher (fleet-local) which will cause other GitRepo(s) to be deployed and initialized.
+I was always impressed with [ArgoCD App Of Apps Pattern](https://argo-cd.readthedocs.io/en/stable/operator-manual/cluster-bootstrapping/#app-of-apps-pattern), which is Declaratively specify one ArgoCD app that consists only of other apps, Its main use is to bootstrap the K8s with all the needed applications.
+
+This repo is an explanation on how to do the same in fleet using [fleet GitRepo](https://fleet.rancher.io/gitrepo-add)
+This file will declaratively specify **main** fleet GitRepo. this **main** GitRepo will be deployed to local rancher (fleet-local) and will cause other GitRepo(s) (representing different applications) to be deployed and initialized.
 
 ```` yaml
 apiVersion: fleet.cattle.io/v1alpha1
